@@ -13,3 +13,6 @@ Finally, print balances sorted by name.
 accounts = {"Alex": 1000, "Bob": 500, "Cara": 200}
 tx = [("Alex",-200), ("Bob",+300), ("Alex",+100), ("Cara",-50), ("Dan",+40)]
 # TODO: apply tx to accounts; then print sorted balances
+for t in tx:
+    accounts[t[0]] = accounts.get(t[0], 0) + t[1]
+print(accounts)
