@@ -10,3 +10,8 @@ Build a dictionary that counts how many times each item appears and print the re
 # Starter:
 items = ["apple", "banana", "apple", "orange", "banana", "apple"]
 # TODO: build a frequency dict using a loop; print it
+
+count = {}
+for i in items:
+    count[i] = count.get(i, 0) + 1
+print(count)
