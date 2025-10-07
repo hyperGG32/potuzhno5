@@ -11,7 +11,5 @@ Build a result list of translations (or "N/A" if no translation). Print the resu
 # TODO: fill result with translations using .get; then print(result)
 source_words = ["cat", "dog", "car", "bird"]
 translations_dict = {"cat":"кіт", "dog":"собака", "bird":"пташка"}
-result = []
-for source in source_words:
-    result.append(translations_dict.get(source, "N/A"))
+result = [translations_dict.get(source, "N/A") for source in source_words]
 print(result)
