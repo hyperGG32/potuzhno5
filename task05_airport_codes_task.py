@@ -14,4 +14,4 @@ flights = ["KBP", "JFK", "LHR", "CDG"]
 # TODO: print city for each code using .get
 
 for flight in flights:
-    print(airports.get(flight, ""))
+    print(airports.get(flight, "Unknown"))
