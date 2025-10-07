@@ -12,7 +12,4 @@ Compute total basket cost and print the result.
 prices = {"apple": 30, "banana": 20, "orange": 25}
 basket = ["apple", "apple", "banana", "orange"]
 # TODO: compute total using a loop; print total
-total_cost = 0
-for item in basket:
-    total_cost += prices.get(item, 0)
-print(f"{total_cost=}")
+print(sum([prices.get(item, 0) for item in basket]))
